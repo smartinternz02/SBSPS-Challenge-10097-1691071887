@@ -25,7 +25,8 @@ OVERVIEW:
 
 
    FEATURES:
-      2. Media Source Aggregation: Collects data from diverse media sources, including newspapers, magazines, television, radio, online news websites, blogs, social media platforms, forums, and more.
+   
+      1. Media Source Aggregation: Collects data from diverse media sources, including newspapers, magazines, television, radio, online news websites, blogs, social media platforms, forums, and more.
 
    2.Real-Time Monitoring: Provides real-time or near-real-time updates on media mentions, enabling organizations to stay current with breaking news and emerging trends.
 
