@@ -37,6 +37,12 @@ OVERVIEW:
 2.Flask framework.
 3.HTML,CSS,Python
 
+HOME PAGE:
+        
+![Screenshot 2023-09-01 145210](https://github.com/smartinternz02/SBSPS-Challenge-10097-1691071887/assets/113038805/dbf0eacc-e79a-493b-b32b-2be533247eab)
+![Screenshot 2023-09-01 145316](https://github.com/smartinternz02/SBSPS-Challenge-10097-1691071887/assets/113038805/6d67e459-0590-4da2-bf3b-3ce68990cdc3)
+
+
 
 
        
