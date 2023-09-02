@@ -30,4 +30,13 @@ OVERVIEW:
 
    2.Real-Time Monitoring: Provides real-time or near-real-time updates on media mentions, enabling organizations to stay current with breaking news and emerging trends.
 
+
+    Tech Stack:
+
+1.Google Colab
+2.Flask framework.
+3.HTML,CSS,Python
+
+
+
        
