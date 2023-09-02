@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create News Article</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .article-display {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: none;
+        }
+
+        .article-display h2 {
+            color: #333;
+        }
+
+        .article-display p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create News Article</h1>
+
+        <div id="articleForm">
+            <label for="articleTitle">Article Title:</label>
+            <input type="text" id="articleTitle" name="articleTitle" required>
+
+            <label for="articleText">Article Text:</label>
+            <textarea id="articleText" name="articleText" rows="4" required></textarea>
+
+            <label for="articleType">Article Type:</label>
+            <select id="articleType" name="articleType" required>
+                <option value="">Select Type</option>
+                <option value="Printed Media">Printed Media</option>
+                <option value="Online Media">Online Media</option>
+                <option value="Broadcast Media">Broadcast Media</option>
+            </select>
+
+            <button type="button" onclick="displayArticle()">Display Article</button>
+        </div>
+
+        <div class="article-display" id="articleDisplay">
+            <h2 id="displayTitle"></h2>
+            <p id="displayText"></p>
+            <p id="displayType"></p>
+        </div>
+    </div>
+
+    <script>
+        function displayArticle() {
+            const articleTitle = document.getElementById("articleTitle").value;
+            const articleText = document.getElementById("articleText").value;
+            const articleType = document.getElementById("articleType").value;
+
+            const displayTitle = document.getElementById("displayTitle");
+            const displayText = document.getElementById("displayText");
+            const displayType = document.getElementById("displayType");
+
+            displayTitle.textContent = articleTitle;
+            displayText.textContent = articleText;
+            displayType.textContent = "Type: " + articleType;
+
+            const articleForm = document.getElementById("articleForm");
+            const articleDisplay = document.getElementById("articleDisplay");
+
+            articleForm.style.display = "none";
+            articleDisplay.style.display = "block";
+        }
+    </script>
+</body>
+</html>
